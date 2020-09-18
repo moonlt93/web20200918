@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .my-menu{
+            display: flex;
+            background-color: olive;
+            height: 80px;
+            align-items: center;
+            
+        }
+        .menu-item{
+            color:ivory;
+            font-weight:bold;
+            font-size:25px;
+            padding: 25px 10px;
+
+        }
+        .menu-item:hover{
+            color:rgb(185, 79, 79);
+            background-color: seashell;
+        }
+        #dummy{
+            flex: 1;
+        }
+        .main-container{
+            margin-top:30px;
+            display:flex;
+            
+        }
+        .main-container > div{
+            border: 5px solid black;
+        }
+        .side-menu{
+            width:200px;
+        }
+        .main-content{
+            flex:1;
+        }
+        .ad-container{
+            width:200px;
+        }
+        .sub-menu{
+            position: absolute;
+            display: none;
+            top:80px;
+            left:0px;
+            padding:10px;
+            width:150px;
+            background-color:white;
+            border-top: 5px solid rgb(185, 79, 79);
+        }
+        .menu-item{
+            position: relative;
+        }
+        .menu-item:hover .sub-menu{
+            display: block;
+        }
+        .sub-menu2{
+            position: absolute;
+            display: none;
+            top:80px;
+            left:0px;
+            padding:10px;
+            width:170px;
+            background-color:white;
+            border-top: 5px solid rgb(185, 79, 79);
+        }
+        .menu-item{
+            position: relative;
+        }
+        .menu-item:hover .sub-menu2{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="my-menu">
+        <div class="menu-item">TUTORIALS.
+            <I class="fas fa-caret-down"></I> 
+            <div class="sub-menu">
+                <div class="sub-item">Lorem.</div>
+                <div class="sub-item">Ea!</div>
+                <div class="sub-item">Ad.</div>
+                <div class="sub-item">Ex.</div>
+                <div class="sub-item">Iure!</div>
+            </div>
+    </div>
+        <div class="menu-item">REFERENCES.
+            <I class="fas fa-caret-down"></I> 
+            <div class="sub-menu2">
+                <div class="sub-item2">Lorem, ipsum.</div>
+                <div class="sub-item2">Cupiditate, non.</div>
+                <div class="sub-item2">Doloribus, quod?</div>
+                <div class="sub-item2">Exercitationem, natus.</div>
+                <div class="sub-item2">Quas, ipsa?</div>
+            </div>    
+    </div>
+        <div class="menu-item">EXAMPLES!<I class="fas fa-caret-down"></I> </div>
+        <div class="menu-item">EXERCISES <I class="fas fa-caret-down"></I></div>
+        <div id="dummy" ></div>
+        <div class="menu-item"><i class="fas fa-adjust"></i></div>
+        <div class="menu-item"><i class="fas fa-globe-americas"></i></div>
+        <div class="menu-item"><i class="fas fa-search"></i></div>
+    </div>
+
+    <div class="main-container">
+        <div class="side-menu">
+            <div>Lorem.</div>
+            <div>Libero.</div>
+            <div>Tenetur.</div>
+            <div>Quam.</div>
+            <div>Distinctio!</div>
+            <div>Dignissimos.</div>
+            <div>Assumenda!</div>
+            <div>Eum!</div>
+            <div>Perspiciatis?</div>
+            <div>Molestias.</div>
+            <div>Unde.</div>
+            <div>Voluptate.</div>
+            <div>At?</div>
+            <div>Consequatur?</div>
+            <div>Repellat.</div>
+            <div>Molestiae!</div>
+            <div>Eligendi?</div>
+            <div>Ullam?</div>
+            <div>Sequi.</div>
+            <div>Ab.</div>
+            <div>Molestiae?</div>
+            <div>Dolor.</div>
+            <div>In.</div>
+            <div>Aspernatur.</div>
+            <div>Error.</div>
+            <div>Veritatis?</div>
+            <div>Magni?</div>
+            <div>Aliquid.</div>
+            <div>Ut.</div>
+            <div>Ipsum.</div>
+        </div>
+        <div class="main-content">
+
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in iure consectetur voluptate aut dolore quo ipsam, quos fugit voluptatum distinctio temporibus minima nihil qui repellendus. A voluptate nesciunt neque.</p>
+            <h1>Repudiandae, quam molestiae.</h1>
+            <p>Possimus nostrum doloremque id atque consectetur laudantium praesentium omnis nam quidem optio reprehenderit impedit, maxime iste facilis unde ducimus quae officiis enim esse modi? Eos totam ea saepe quis repellendus.</p>
+            <h1>Suscipit, quam fuga?</h1>
+            <p>Nesciunt eius aperiam esse. Beatae labore mollitia quisquam perferendis sunt quod recusandae eum impedit iure a! Quasi libero, dolore, consectetur cum temporibus, tenetur error accusamus incidunt quia beatae provident omnis?</p>
+            <h1>Eos, nobis inventore.</h1>
+            <p>Consectetur, saepe, blanditiis eius aut nesciunt vero vitae sunt dolorum, deserunt suscipit aliquam inventore. Animi excepturi atque nulla perspiciatis natus modi, dolores ex placeat eum repellat consectetur itaque quam quaerat.</p>
+            <h1>Dignissimos, ipsum! Enim.</h1>
+            <p>Perspiciatis hic commodi suscipit facilis quae reprehenderit dolor id dicta error voluptatibus nesciunt velit corrupti modi voluptate, facere dolore saepe ipsam nihil vero? Culpa nihil pariatur voluptas praesentium ad! Odit!</p>
+            <h1>Ea, amet nisi!</h1>
+            <p>Aspernatur, cum rerum qui dolores excepturi sequi nisi odio at eaque quia, dolor laudantium sapiente impedit dignissimos veniam quod temporibus iusto, corporis facilis nemo. Quae facilis quaerat eaque libero mollitia.</p>
+            <h1>Aspernatur, voluptatem porro.</h1>
+            <p>Sint et, qui est nisi consectetur autem recusandae asperiores exercitationem id incidunt, a aspernatur beatae debitis culpa delectus obcaecati nulla eum, possimus ab unde adipisci voluptatem! Possimus quo esse fuga.</p>
+            <h1>Praesentium, necessitatibus voluptates.</h1>
+            <p>Incidunt provident sint fugit repellat rem quod beatae, eligendi nulla ipsa. Quas doloremque id itaque minus repellendus, molestiae nemo fugit? Laborum, voluptate fugit tempora in dolorum porro asperiores minima aliquid.</p>
+            <h1>Necessitatibus, culpa dolor.</h1>
+            <p>Officia qui, eveniet ab explicabo quibusdam quas nisi repudiandae enim eos nobis pariatur perspiciatis necessitatibus ducimus ea sed laboriosam laudantium commodi recusandae temporibus voluptatem aspernatur sit consectetur odit? Natus, ipsum?</p>
+            <h1>Ab, impedit iusto?</h1>
+            <p>Ratione quod quo quia quam facere illo reiciendis velit ea necessitatibus nostrum ipsum nulla, consequuntur numquam id inventore, temporibus magni quae consequatur ullam repudiandae unde officiis! Temporibus ab optio aut?</p>
+        </div>
+
+        <div class="ad-container"></div>
+        
+
+    </div>
+</body>
+</html>

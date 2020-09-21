@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input id="input1" type="text"><br>
+    <input id="input2" type="text"><br>
+    <button onclick="displayAdd()"><i class="fas fa-plus"></i></button>
+    <p id="result1"></p>
+<hr>
+    <input id="input3" type="text"><br>
+    <input id="input4" type="text"><br>
+    <button onclick="displayMulti()"><i class="fas fa-times"></i></button>
+    <p id="result2"></p>
+<hr>
+    <input id="input5" type="text"><br>
+    <input id="input6" type="text"><br>
+    <button onclick="displaySub()"><i class="fas fa-minus"></i></button>
+    <p id="result3"></p>
+<hr>
+
+    <script>
+        function displayAdd(){
+            var n1= document.getElementById("input1").value;
+            var n2= document.getElementById("input2").value;
+
+            var result = add(Number(n1),Number(n2));
+            document.getElementById("result1").innerHTML=result;
+        }
+        function add(a,b){
+            return a+b;
+        }
+        function displayMulti(){
+            var n3= document.getElementById("input3").value;
+            var n4= document.getElementById("input4").value;
+
+            var result = Multi(n3,n4);
+            document.getElementById("result2").innerHTML=result;
+        }
+        function Multi(a,b){
+            return a*b;
+        }
+        function displaySub(){
+            var n5= document.getElementById("input5").value;
+            var n6= document.getElementById("input6").value;
+
+            var result = Sub(n5,n6);
+            document.getElementById("result3").innerHTML=result;
+        }
+        function Sub(a,b){
+            return a-b;
+        }
+
+
+    </script>
+</body>
+</html>

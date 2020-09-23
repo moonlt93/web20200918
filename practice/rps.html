@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="rpsGame(this.id)" id="rock"><i class="fas fa-hand-rock"></i></button>
+    <button onclick="rpsGame(this.id)" id="scissors"><i class="fas fa-hand-paper"></i></button>
+    <button onclick="rpsGame(this.id)" id="paper"><i class="fas fa-hand-scissors"></i></button>
+
+    <br>
+
+    <img src="" alt="" id="computer">
+    <p id="result"></p>
+    <script>
+        // function rpsGame() {
+        //     var r = Math.floor(Math.random()*3) + 1;
+        //     var fileName = "rps" + r + ".png";
+        //     document.getElementById("computer").src = fileName;
+         
+          
+        //     document.getElementById("result").innerHTML="이겼습니다.";
+        //     document.getElementById("result").innerHTML="비겼습니다.";
+        //     document.getElementById("result").innerHTML="졋습니다." ;     
+            
+        //     }
+
+        function rpsGame(id) {
+            var r = Math.floor(Math.random()*3) + 1;
+            var fileName = "rps" + r + ".png";
+            document.getElementById("computer").src = fileName; 
+            //rps1.png = 가위 rps2.png = 보자기 rps3.png = 주먹
+         
+            //alert(id);
+            if (id == 'rock' && fileName == 'rps1.png') {
+                document.getElementById("result").innerHTML="이겼습니다.";
+                console.log('1');
+            } else if(id == 'rock' && fileName == 'rps2.png') {
+                document.getElementById("result").innerHTML="졋습니다.";
+                console.log('2');
+            } else if(id == 'rock' && fileName == 'rps3.png') {
+                document.getElementById("result").innerHTML="비겼습니다.";
+                console.log('3');
+            }
+
+
+            if (id=='scissors'&& fileName=='rps2.png'){
+                document.getElementById("result").innerHTML="이겼습니다."; 
+                console.log('4');
+            } else if(id == 'scissors'&& fileName =='rps1.png') {
+                document.getElementById("result").innerHTML="비겼습니다.";
+                console.log('5');
+            }else if(id == 'scissors' && fileName == 'rps3.png') {
+
+                document.getElementById("result").innerHTML="비겼습니다.";
+                console.log('6');
+            }
+        
+
+            if(id=='paper'&& fileName=='rps1.png'){
+                document.getElementById("result").innerHTML="이겼습니다."; 
+                console.log('7');
+            } else if(id == 'paper'&& fileName =='rps3.png'){
+                document.getElementById("result").innerHTML="졋습니다.";
+                console.log('8');
+            }else if(id == 'paper' && fileName == 'rps2.png') {
+                document.getElementById("result").innerHTML="비겼습니다.";
+                console.log('9');
+            }
+
+
+            // document.getElementById("result").innerHTML="이겼습니다.";
+            // document.getElementById("result").innerHTML="비겼습니다.";
+            // document.getElementById("result").innerHTML="졋습니다." ;     
+            
+            }
+    </script>
+</body>
+</html>

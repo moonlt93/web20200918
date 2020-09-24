@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 onclick="console.log('hello');" id="head1">Lorem.</h1>
+    <h1 onclick="show();" id="head2">lorem2</h1>
+    <h1 id="head3">Lorem, ipsum dolor.</h1>
+    <h1 id="head4">Lorem, ipsum.</h1>
+    <script>
+        var h4=document.getElementById("head4");
+        h4.addEventListener("click",show);
+
+        var h3 = document.getElementById("head3");
+
+        h3.onclick = show;// show()안됨-> 함수가 실행된 결과.
+
+        function show() // 자바 스크립트에서 함수는 우선권을 가짐.
+            {
+            for(var i=0; i<3; i++){
+                console.log(i);
+            }
+        }
+
+    </script>
+</body>
+</html>

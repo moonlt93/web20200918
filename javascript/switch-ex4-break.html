@@ -6,7 +6,31 @@
     </style>
 </head>
 <body>
+    <input type="text" id="input1"> <br>
+    <button onclick="show();">점수보기</button>
+    <p id="result"></p>
+    
     <script>
+        function show(){
+            
+            var grade = document.getElementById("input1").value;
+            var txt;
+
+            switch(grade){
+                case 'a':
+                txt= "90점 이상입니다.";
+                break;
+                case 'b':
+                txt="80점 이상입니다.";
+                break;
+                case'c':
+                txt="70점 이상입니다."
+                break;
+                default:
+                txt="등급오류";   
+            }
+            document.getElementById('result').innerHTML=txt;
+        }
     </script>
 </body>
 </html>

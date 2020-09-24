@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="result"></div>
+    <input type="number" id="i">
+    <script>
+        var txt="";
+        var num=document.getElementById('i').value;
+        num=Number(num);
+
+        for(var num =2;num<=9;num++){
+            for(var j=2;j<=9;j++)
+            txt += num+"&times"+j+ "=" + (num*j) + "<br>";
+           console.log(num,j);
+        }
+    
+    document.getElementById('result').innerHTML=txt;
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="lotto()">로또</button>
+    <div id="result"></div>
+    <script>
+        function lotto(){
+            var numbers=[];
+            while(numbers.length < 6) //while문 0~5까지돔 6개 
+                {
+                var newNumber =Math.floor(Math.random()*45)+1 // floor소수점 이하를 버림한다.0~45까지 수
+                if(!numbers.includes(newNumber)) // 중복값안보냄; , 그래서  new number랑 number 같을때 중복값을 !  
+                {
+                 numbers.push(newNumber);
+                }
+             
+            }
+            //<div>2</div></div>3<div><div>4<div><div>5<div><div>6<div>
+            var txt= "";
+            for(var i=0; i<numbers.length; i++) // 숫자 돔
+            {
+                txt+="<div>"+numbers[i]+"</div>"; //텍스트 
+            }
+            document.getElementById("result").innerHTML=txt; //결과값 보냄
+        }
+    </script>
+</body>
+</html>

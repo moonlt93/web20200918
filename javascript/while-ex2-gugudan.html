@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="number" onkeyup="show()"id="input1">
+    <div id="result"></div>
+    <script>
+        function show()
+        {
+            var num= document.getElementById("input1").value; // num문자 정의 
+            num=Number(num); // 숫자 잘 나오게 지정
+            
+            var txt=""; //빈칸
+            var i=1;
+            while(i<=9){
+                txt+=num+"&times;"+i+"="+(num*i);// 숫자+x+i+=값, //기호들은 "", 값은 그대로 
+                txt+="<br>";
+                i++ 
+            console.log(i);
+            }
+            document.getElementById("result").innerHTML=txt;
+
+        }
+    </script>
+</body>
+</html>

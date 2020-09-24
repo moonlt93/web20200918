@@ -1,16 +1,167 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<script>
-    function greeting(name,postition){
-        alert(name+""+position+"환영합니다.");
-
-    }
-</script>
-
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+    </style>
 </head>
+
 <body>
-    <button onclick="greeting('홍길동','부장')">눌러</button>
-    </body>
+    <p id="result"></p>
+    <script>
+        var txt = "";
+        var num = Number(num);
+
+        for (var i = 0; i <= 4; i++) {
+            for (var j = 0; j <= 0; j++) {
+                txt += i;
+            }
+            txt += "<br>";
+        }
+        txt +="<br>";
+
+        for (var i = 5; i > 0; i--) {
+
+            txt += i;     //  
+
+            txt += "<br>";
+        }
+        txt +="<br>";
+
+
+
+
+        for (var i = 0; i <= 4; i++) {
+            for (var j = 0; j <= 4; j++) {
+                txt += "*";
+            }
+            txt += "<br>";
+        }
+
+        txt +="<br>";
+
+        for (var i = 0; i <= 4; i++) {
+            for (var j = 4; j >= i; j--) {
+                txt += "*";
+            }
+            txt += "<br>";
+
+
+        }
+        txt +="<br>";
+
+        for (var i = 0; i <= 4; i++) {
+            for (var j = 4; j >= 4 - i; j--) {
+                txt += "*";
+            }
+            txt += "<br>";
+        }
+        txt +="<br>";
+
+        for (var i = 0; i <= 4; i++) {
+            for (var j = 4; j >= i; j--) {
+                txt += "&nbsp";
+            }
+            for (var j = 0; j <= i; j++) {
+                txt += "*";
+            }
+            txt += "<br>";
+        
+        }
+        txt +="<br>";
+
+        for (var i = 0; i <= 4; i++) {
+            for (var j = 0; j <= i; j++) {
+                txt += "&nbsp";
+            }
+            for (j = 4; j >= i; j--) {
+                txt += "*";
+            }
+            txt += "<br>";
+        }
+        txt +="<br>";
+
+        for (var i = 0; i <= 4; i++) {
+            for (var j = 4; j >= i; j--) {
+                txt += "*";
+
+            }
+            txt += "<br>";
+
+        }
+        txt +="<br>";
+        
+
+        for (var i = 0; i <= 4; i++) {
+            for (var j = 0; j <= i; j++) {
+                txt += "*";
+            }
+            for (j = 4; j >= i; j--) {
+                txt += "#";
+            }
+            txt += "<br>";
+        }
+        txt +="<br>";
+
+        for (var i = 0; i <= 4; i++) {
+            for (var j = 0; j <= i; j++) {
+                txt += "#";
+            }
+            for (j = 4; j >= i; j--) {
+                txt += "*";
+            }
+            txt += "<br>";
+
+        }
+        txt +="<br>";
+
+        for (var i = 0; i <= 4; i++) {
+            for (var j = 0; j <= 4; j++) {
+                txt += j;
+            }
+            txt += "<br>";
+
+
+        }
+        txt +="<br>";
+        
+        
+        for (var i = 0; i <= 4; i++) {
+            for (var j =0; j <= 4; j++) {
+                txt += (j+i);
+                
+            }
+            txt += "<br>";
+
+
+        }
+        txt +="<br>";
+
+        
+        for (var i = 0; i <= 4; i++) {
+            for (var j = 0; j <= i; j++) {
+                txt += j;
+            }
+            txt += "<br>";
+        }
+        txt +="<br>";
+
+        var k=0;
+        for (var i = 0; i < 5; i++) {
+
+            for (var j = 0; j <=i; j++) {
+                txt += (k%10);
+                k++;
+            }   
+            txt += "<br>";
+        }
+        txt +="<br>";
+
+
+        document.getElementById('result').innerHTML = txt;
+    </script>
+
+</body>
+
 </html>

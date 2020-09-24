@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="lotto()">로또번호출력</button>
+    <div id="result"></id>
+    <script>
+        function lotto(){
+            var numbers="";
+
+            //<div>3</div><div>2</div><div>45</div><div>34</div><div>67</div>
+            for(var i =0; i<6; i++){
+                var randomNumber = Math.floor(Math.random()*45)+1;
+                numbers+="<div>"+randomNumber+"</div>";
+
+            }
+            document.getElementById('result').innerHTML=numbers;
+        }
+    </script>
+</body>
+</html>

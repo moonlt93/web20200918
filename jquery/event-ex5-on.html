@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#head1").click(function(){
+                console.log("head1 click");
+            
+            });
+            $("#head2").on("click",null,"데이터",function(a){
+                console.log("head2 click");
+                console.log(a.data);
+                
+            });
+            $("#head3").on({click: function(){
+                    console.log("head3 click");
+                }
+            });
+            $("#head4").on({
+                click: function(){
+                    console.log("head4 click");
+                }
+            });
+            $("#head5").on({
+                click: function(){
+                    console.log("head5 click");
+                }
+            });
+            console.log('start');
+        });
+    </script>
+</head>
+<body>
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2">Culpa.</h1>
+    <h1 id="head3">Eaque!</h1>
+    <h1 id="head4">Voluptas.</h1>
+    <h1 id="head5">Pariatur.</h1>
+</body>
+</html>

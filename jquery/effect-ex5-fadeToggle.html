@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(a) 
+         
+        {console.log(a);
+            $("#btn1").click(function(b){
+                console.log(b);
+                $(".duck1").fadeToggle();
+                $(".duck2").fadeToggle("slow");
+                $(".duck3").fadeToggle(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1">TOGGLE </button>
+ <h1 class="duck1">Lorem, ipsum dolor.</h1>
+ <h1 class="duck2">Hic, odit et.</h2>
+ <h1 class="duck3">Odit, natus repellendus.</h3>
+</body>
+</html>

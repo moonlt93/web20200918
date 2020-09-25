@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+</style>
+<script>
+       $(document).ready(function(a){
+           console.log(a);
+            $("#btn1").click(function(b){
+                console.log(b);
+                 $(".head1").slideUp("slow");
+  });
+});
+
+        $(document).ready(function(c){
+            console.log(c);
+            $("#btn2").click(function(d){
+                console.log(d);
+                $(".head1").slideDown("slow");
+  });
+});
+    </script>
+</head>
+<body>
+    <button id="btn1">up</button>
+    <button id="btn2">down</button>
+    <h1 class="head1">Lorem, ipsum dolor.</h1>
+
+</body>
+</html>

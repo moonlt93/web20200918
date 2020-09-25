@@ -7,19 +7,18 @@
     </style>
     <script>
         $(document).ready(function() {
-            $(h1).click(function(){
-                $(this).hide;
+            $("#btn1").click(function(){
+                $("#head1").hide();
             });
-           
+            $("btn2").click(function(){
+                $("#head1").show();
+            });
         });
     </script>
 </head>
 <body>
-<h1 >Lorem, ipsum.</h1>
-<h1 >Libero, ea!</h1>
-<h1 >Minima, velit!</h1>
-<h1 >Voluptates, esse.</h1>
-<h1 >Delectus, obcaecati.</h1>
-
+    <buttton id ="btn1">hide</buttton>
+    <buttton id ="btn1">show</buttton>
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
 </body>
 </html>

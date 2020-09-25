@@ -7,19 +7,17 @@
     </style>
     <script>
         $(document).ready(function() {
-            $(h1).click(function(){
-                $(this).hide;
-            });
-           
+            $("#btn1").click(function(){
+                $("h1").toggle(3000,function(){
+                    console.log("효과가 끝난 후 실행");
+                
+                });
         });
+    });
     </script>
 </head>
 <body>
-<h1 >Lorem, ipsum.</h1>
-<h1 >Libero, ea!</h1>
-<h1 >Minima, velit!</h1>
-<h1 >Voluptates, esse.</h1>
-<h1 >Delectus, obcaecati.</h1>
-
+    <button id ="btn1">toggle</button>
+    <h1>Lorem, ipsum dolor.</h1>
 </body>
 </html>
